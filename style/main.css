@@ -37,6 +37,10 @@ h2 {
   font-weight: 700;
   line-height: 117%;
 }
+h1 {
+  font-size: clamp(2rem, 4.44vw, 4rem);
+  margin-bottom: 0.375em;
+}
 p {
   color: var(--dark3);
   font-size: 1rem;
@@ -51,21 +55,40 @@ a {
   line-height: 160%;
 }
 
+a:hover {
+  color: var(--accent);
+}
+
+a[active] {
+  color: var(--accent);
+}
+
 .btn {
   background-color: var(--accent);
   color: var(--white);
-  font-size: 1.25rem;
+  font-size: clamp(0.87rem, 1.38vw, 1.25rem);
   font-weight: 600;
   line-height: 115%;
   text-align: center;
+  border: none;
   border-radius: 0.5rem;
   padding: 1.25em 1.5em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 100%;
 }
 
 /*uncommon class/id */
 
 header {
   background-color: rgba(255, 144, 14, 0.1);
+  padding: clamp(1.56rem, 3.47vw, 3.125rem) 0;
 }
 
 nav {
@@ -87,4 +110,30 @@ nav ul {
   font-weight: 700;
   line-height: 117%;
   color: var(--dark1);
+}
+
+#heroSection .content {
+  max-width: 868px;
+  margin: clamp(1.56rem, 8.05vw, 7.25rem) auto clamp(1.56rem, 3.47vw, 3.125rem)
+    auto;
+  text-align: center;
+}
+
+#heroSection .content p {
+  margin-bottom: 2em;
+}
+
+#heroImage {
+  width: min(1440px, 95%);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 540px) {
+  nav,
+  nav ul {
+    flex-direction: column;
+  }
+  nav {
+    gap: 1.2rem;
+  }
 }
