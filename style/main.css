@@ -139,7 +139,8 @@ nav ul {
 }
 
 .content p,
-.content2 p {
+.content2 p,
+.heading p {
   margin-bottom: 2em;
 }
 
@@ -166,6 +167,11 @@ nav ul {
 
 .text-content {
   max-width: 586px;
+}
+
+#features > .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 #left-border {
