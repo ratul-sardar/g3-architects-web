@@ -106,6 +106,10 @@ header {
   padding: clamp(1.56rem, 3.47vw, 3.125rem) 0;
 }
 
+header .container {
+  margin-top: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -158,6 +162,15 @@ nav ul {
 
 .content2 {
   max-width: 537px;
+}
+
+.text-content {
+  max-width: 586px;
+}
+
+#left-border {
+  padding-left: 1.25rem;
+  border-left: 0.3rem solid var(--accent);
 }
 
 /* tablet device */
