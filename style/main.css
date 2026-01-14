@@ -194,12 +194,12 @@ nav ul {
   border-left: 0.3rem solid var(--accent);
 }
 
-.card-container {
+#features .card-container {
   display: grid;
   gap: 1.25rem;
 }
 
-.cards {
+#features .cards {
   display: grid;
   gap: 0.75em;
   max-width: 586px;
@@ -223,6 +223,16 @@ nav ul {
   margin: -71px 0 0 -92px;
   position: relative;
   z-index: 999;
+}
+
+#SomeFacts {
+  display: grid;
+  gap: 4.25rem;
+}
+
+#SomeFacts .heading {
+  max-width: 542px;
+  text-align: left;
 }
 
 /* Laptop devices */
